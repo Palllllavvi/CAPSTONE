@@ -1,0 +1,5 @@
+com\secure360\risk\controller\RiskController.class
+com\secure360\risk\RiskUnderwritingServiceApplication.class
+com\secure360\risk\config\SecurityConfig.class
+com\secure360\risk\service\IncomeUnderwritingService.class
+com\secure360\risk\service\EquipmentRiskRatingService.class

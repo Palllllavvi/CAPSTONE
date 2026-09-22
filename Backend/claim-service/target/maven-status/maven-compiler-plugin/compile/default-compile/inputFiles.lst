@@ -1,0 +1,12 @@
+C:\PALLAVI\TheCapstone\Backend\claim-service\src\main\java\com\secure360\claim\ClaimServiceApplication.java
+C:\PALLAVI\TheCapstone\Backend\claim-service\src\main\java\com\secure360\claim\config\DataInitializer.java
+C:\PALLAVI\TheCapstone\Backend\claim-service\src\main\java\com\secure360\claim\config\SecurityConfig.java
+C:\PALLAVI\TheCapstone\Backend\claim-service\src\main\java\com\secure360\claim\controller\ClaimController.java
+C:\PALLAVI\TheCapstone\Backend\claim-service\src\main\java\com\secure360\claim\dto\ReviewClaimRequest.java
+C:\PALLAVI\TheCapstone\Backend\claim-service\src\main\java\com\secure360\claim\dto\SubmitEquipmentClaimRequest.java
+C:\PALLAVI\TheCapstone\Backend\claim-service\src\main\java\com\secure360\claim\dto\SubmitIncomeClaimRequest.java
+C:\PALLAVI\TheCapstone\Backend\claim-service\src\main\java\com\secure360\claim\entity\EquipmentClaim.java
+C:\PALLAVI\TheCapstone\Backend\claim-service\src\main\java\com\secure360\claim\entity\IncomeClaim.java
+C:\PALLAVI\TheCapstone\Backend\claim-service\src\main\java\com\secure360\claim\repository\EquipmentClaimRepository.java
+C:\PALLAVI\TheCapstone\Backend\claim-service\src\main\java\com\secure360\claim\repository\IncomeClaimRepository.java
+C:\PALLAVI\TheCapstone\Backend\claim-service\src\main\java\com\secure360\claim\service\ClaimService.java

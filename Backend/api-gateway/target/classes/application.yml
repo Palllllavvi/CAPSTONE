@@ -1,0 +1,75 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+      routes:
+        - id: auth-user-service-auth
+          uri: lb://auth-user-service
+          predicates:
+            - Path=/api/auth/**
+        - id: auth-user-service-users
+          uri: lb://auth-user-service
+          predicates:
+            - Path=/api/users/**
+
+        - id: project-service-projects
+          uri: lb://project-equipment-service
+          predicates:
+            - Path=/api/projects/**
+        - id: project-service-equipment
+          uri: lb://project-equipment-service
+          predicates:
+            - Path=/api/equipment/**
+        - id: project-service-agreements
+          uri: lb://project-equipment-service
+          predicates:
+            - Path=/api/agreements/**
+        - id: project-service-handovers
+          uri: lb://project-equipment-service
+          predicates:
+            - Path=/api/handovers/**
+
+        - id: risk-underwriting-service
+          uri: lb://risk-underwriting-service
+          predicates:
+            - Path=/api/risk/**
+
+        - id: policy-service
+          uri: lb://policy-service
+          predicates:
+            - Path=/api/policies/**
+
+        - id: claim-service
+          uri: lb://claim-service
+          predicates:
+            - Path=/api/claims/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+logging:
+  level:
+    org.springframework.cloud.gateway: INFO

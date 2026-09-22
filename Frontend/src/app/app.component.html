@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="app-footer">
+  <div class="container footer-content">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Secure<span class="text-gradient">360</span></span>
+      </div>
+      <p class="footer-desc">
+        Institutional-grade risk protection engineered for the independent economy. Equipment liability coverage and annual income assurance.
+      </p>
+      <div class="footer-copy">
+        &copy; {{ currentYear }} Freelancer Secure360 Inc. All policy terms subject to underwriter guidelines.
+      </div>
+    </div>
+
+    <div class="footer-links-grid">
+      <div class="footer-col">
+        <h5>Products</h5>
+        <ul>
+          <li><a routerLink="/equipment">Equipment Liability</a></li>
+          <li><a routerLink="/income">Income Assurance</a></li>
+          <li><a routerLink="/income">Medical Incapacity Rider</a></li>
+          <li><a routerLink="/claims">Claims Settlement</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Platform</h5>
+        <ul>
+          <li><a routerLink="/dashboard">Freelancer Dashboard</a></li>
+          <li><a routerLink="/auth/login">Account Sign In</a></li>
+          <li><a routerLink="/auth/register">Create Policy Account</a></li>
+          <li><a routerLink="/admin">Underwriter Portal</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
