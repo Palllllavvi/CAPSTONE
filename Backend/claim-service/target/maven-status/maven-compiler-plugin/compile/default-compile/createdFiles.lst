@@ -1,14 +1,1 @@
-com\secure360\claim\config\DataInitializer.class
-com\secure360\claim\config\SecurityConfig.class
-com\secure360\claim\dto\SubmitIncomeClaimRequest.class
-com\secure360\claim\entity\EquipmentClaim$EquipmentClaimBuilder.class
-com\secure360\claim\controller\ClaimController.class
-com\secure360\claim\entity\IncomeClaim.class
-com\secure360\claim\service\ClaimService.class
-com\secure360\claim\dto\SubmitEquipmentClaimRequest.class
 com\secure360\claim\ClaimServiceApplication.class
-com\secure360\claim\repository\IncomeClaimRepository.class
-com\secure360\claim\entity\EquipmentClaim.class
-com\secure360\claim\dto\ReviewClaimRequest.class
-com\secure360\claim\repository\EquipmentClaimRepository.class
-com\secure360\claim\entity\IncomeClaim$IncomeClaimBuilder.class
